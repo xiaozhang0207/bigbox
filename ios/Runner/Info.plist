@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	</array>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>BigBox</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>bigbox</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<string>NO</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.business</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>sms</string>
+		<string>tel</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Камерны дуу нээхийг зөвшөөрөх үү?</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>POS Системд бүрэн холбогдохын тулд хэвлэх төхөөрөмжийг BLUETHOOTH тусламжтайгаар холбоно уу?</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>POS Системд бүрэн холбогдохын тулд хэвлэх төхөөрөмжийг BLUETHOOTH тусламжтайгаар холбоно уу?</string>
+	<key>NSCameraUsageDescription</key>
+	<string>QR уншихын тулд таны камерийг ашиглахыг зөвшөөрөх үү?.</string>
+	<key>NSCameraUsageDescription NSPhotoLibraryUsageDescription</key>
+	<string>QR уншихын тулд таны камерийг ашиглахыг зөвшөөрөх үү?.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>POS Системд бүрэн холбогдохын тулд байршил заагчийг идэвхжүүлнэ үү?</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>POS Системд бүрэн холбогдохын тулд байршил заагчийг идэвхжүүлнэ үү</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>POS Системд бүрэн холбогдохын тулд байршил заагчийг идэвхжүүлнэ үү</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>POS Системд бүрэн холбогдохын тулд төхөөрөмжний файлын санг холбоно уу?</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>QR уншихдаа зураг хуулах боломжтой бөгөөд энэ зөвшөөрлийг олгосноор илүү хялбар ашиглах болно. Таны утасны зургын санг ашиглахыг зөвшөөрөх үү?</string>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>DDA9.1</string>
+				<string>C617.1</string>
+				<string>35F9.1</string>
+				<string>0A2A.1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategorySystemBootTime</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>35F9.1</string>
+				<string>8FFB.1</string>
+				<string>3D61.1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+				<string>1C8F.1</string>
+				<string>C56D.1</string>
+				<string>AC6B.1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>85F4.1</string>
+				<string>E174.1</string>
+				<string>7D9E.1</string>
+				<string>B728.1</string>
+			</array>
+		</dict>
+	</array>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>bluetooth-peripheral</string>
+		<string>fetch</string>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>com.apple.security.network.client</key>
+	<true/>
+</dict>
+</plist>

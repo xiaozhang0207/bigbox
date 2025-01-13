@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "332285402769",
+    "project_id": "bigbox-f23f9",
+    "storage_bucket": "bigbox-f23f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332285402769:android:52b79760211c21a8c76930",
+        "android_client_info": {
+          "package_name": "app.bigbox.infitech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332285402769-dj8hu7peia0o0ea1u123j1fdq0keb8f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcyPUW54x-4HnTlOHcWq0aSChSKn2172k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332285402769-dj8hu7peia0o0ea1u123j1fdq0keb8f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332285402769:android:b6c8a36b18ff7a41c76930",
+        "android_client_info": {
+          "package_name": "app.bigbox.mn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332285402769-dj8hu7peia0o0ea1u123j1fdq0keb8f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcyPUW54x-4HnTlOHcWq0aSChSKn2172k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332285402769-dj8hu7peia0o0ea1u123j1fdq0keb8f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
