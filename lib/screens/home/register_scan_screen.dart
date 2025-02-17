@@ -148,19 +148,19 @@ class _RegisterScanScreenState extends State<RegisterScanScreen>
       setStates();
     }
   }
-  
+
   /// Prints a ticket with the specified content including price, phone number, and coordinates.
-  /// 
+  ///
   /// This function constructs a CPCL command to print a ticket with various details.
   /// It handles the command creation, formatting, and sending to the printer.
-  /// 
+  ///
   /// Parameters:
   /// - [price]: The price to be printed on the ticket.
   /// - [phone]: The phone number to be printed on the ticket.
   /// - [x]: The x-coordinate to be formatted and printed.
   /// - [y]: The y-coordinate to be formatted and printed.
   /// - [zIndex]: The y-coordinate to be formatted and code.
-  /// 
+  ///
   /// The function checks if the button is already loading to prevent duplicate actions.
   /// It formats the coordinates, constructs the CPCL command, and sends it to the printer.
   /// If an error occurs during the process, it catches the exception and ensures the button
@@ -177,8 +177,8 @@ class _RegisterScanScreenState extends State<RegisterScanScreen>
       await cpclCommand.size(width: 600, height: 400);
       await cpclCommand.text(
         content: 'phone:$phone',
-        x: 5,
-        y: 10,
+        x: 25,
+        y: 0,
         xMulti: 2,
         yMulti: 2,
       );
@@ -188,7 +188,7 @@ class _RegisterScanScreenState extends State<RegisterScanScreen>
 
       await cpclCommand.text(
         content: '$formattedX-$formattedY-',
-        x: 50,
+        x: 30,
         y: 120,
         xMulti: 2,
         yMulti: 2,
@@ -196,24 +196,24 @@ class _RegisterScanScreenState extends State<RegisterScanScreen>
       if(zIndex != null) z.text = zIndex;
       await cpclCommand.text(
         content: z.text,
-        x: 230,
-        y: 100,
-        xMulti: 4,
-        yMulti: 4, 
+        x: 180,
+        y: 60,
+        xMulti: 7,
+        yMulti: 7,
         rotation: Rotation.r_270,
       );
       final now = DateTime.now();
       final formattedDate = DateFormat('MM/dd').format(now);
       await cpclCommand.text(
         content: 'date:$formattedDate',
-        x: 5,
-        y: 235,
+        x: 22,
+        y: 240,
         xMulti: 2,
         yMulti: 2,
       );
       await cpclCommand.text(
         content: 'price:$price',
-        x: 220,
+        x: 230,
         y: 235,
         xMulti: 2,
         yMulti: 2,
@@ -743,17 +743,18 @@ class _RegisterScanScreenState extends State<RegisterScanScreen>
                       //     } else {
                       //       selectedPrinter = devices[findIndex].address ?? '';
                       //       isConnected = true;
-                      //       
+                      //
                       //     }
                       //   }
                       // });
                       int findIndex = devices.indexWhere((item) => item.address == printerSdk);
                       pickedDevice = devices[findIndex];
                       await printTicketWithContent(
-                        '10000',
-                        '99999999',
+                        '10000', // price
+                        '99999999', //phone
                         '100',
                         '100',
+                        "3310"
                       );
                     },
                   ).padding(horizontal: 20, bottom: 40, top: 12),
